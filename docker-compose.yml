@@ -1,0 +1,13 @@
+services:
+  nut:
+    build: .
+    container_name: nut-us3000
+    restart: unless-stopped
+    ports:
+      - "3493:3493"
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    device_cgroup_rules:
+      - 'c 189:* rwm'
+    environment:
+      - TZ=Europe/Madrid
