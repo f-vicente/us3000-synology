@@ -68,7 +68,7 @@ Synology does not allow customizing username/secret/ups-name, so they are hardco
 
 ## 📝 License
 
-This project is provided as-is for personal use with Synology NAS systems.
+This project is provided as-is for personal use.
 
 ## References
   - https://nascompares.com/answer/how-to-make-the-ugreen-us3000-nas-ups-work-on-a-terramaster-f4-424-pro/
