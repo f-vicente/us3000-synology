@@ -53,7 +53,7 @@ This project provides a containerized NUT server that communicates with the Ugre
 ![NUT Server Running](Settings.png)
 
 ## Tested on
-  - DSM 7.2 with arc-loader (SA6400 model)
+  - DSM 7.2 with arc-loader (SA6400 model) and "ups" addon
 
 ## Notes
 Synology does not allow customizing username/secret/ups-name, so they are hardcoded:
@@ -65,6 +65,7 @@ Synology does not allow customizing username/secret/ups-name, so they are hardco
   - The container does not stop gracefully, it throws an error.
   - Changing settings in the Synology UPS pane causes a restart in the container and an error appears, but changes apply. Just close, and open again the settings page.
   - Startup warnings and errors.
+  - Synology does not power-off the NAS, just switches to standby. Use arc-loader "ups" addon to shut down completely, then you can use WOL to power-on again.
 
 ## 📝 License
 
