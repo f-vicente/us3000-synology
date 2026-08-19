@@ -13,7 +13,6 @@ RUN chmod +x /start.sh
 
 EXPOSE 3493
 
-LABEL maintainer="franfj@gmail.com"
 LABEL description="NUT (Network UPS Tools) Docker container for Ugreen US3000 UPS on Synology"
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
