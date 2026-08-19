@@ -64,7 +64,12 @@ Synology does not allow customizing username/secret/ups-name, so they are hardco
 ## Known-issues
   - The container does not stop gracefully, it throws an error.
   - Changing settings in the Synology UPS pane causes a restart in the container and an error appears, but changes apply. Just close, and open again the settings page.
+  - Startup warnings and errors.
 
 ## 📝 License
 
 This project is provided as-is for personal use with Synology NAS systems.
+
+## References
+  - https://nascompares.com/answer/how-to-make-the-ugreen-us3000-nas-ups-work-on-a-terramaster-f4-424-pro/
+  - https://github.com/instantlinux/docker-tools/tree/main/images/nut-upsd
